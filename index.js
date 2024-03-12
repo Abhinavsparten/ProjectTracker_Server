@@ -15,13 +15,13 @@ require('./db/connection')
 const server=express()
 
 // connect frontend
-// server.use(cors({
-//     origin: 'http://localhost:3000', 
-//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-//     credentials: true, 
-//   }));
+server.use(cors({
+    origin: 'https://65f030eb75301ba4cbb5e6bb--aesthetic-seahorse-4ab372.netlify.app/', 
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, 
+  }));
 
-server.use(cors())
+// server.use(cors())
 
 server.use(cookieParser());
 server.use(express.json())
