@@ -16,7 +16,7 @@ const server=express()
 
 // connect frontend
 server.use(cors({
-    origin: 'https://65f030eb75301ba4cbb5e6bb--aesthetic-seahorse-4ab372.netlify.app/', 
+    origin: 'https://projecttracker-server.onrender.com', 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, 
   }));
