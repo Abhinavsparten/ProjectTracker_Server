@@ -15,13 +15,13 @@ require('./db/connection')
 const server=express()
 
 // connect frontend
-server.use(cors({
-    origin: 'https://projecttracker-server.onrender.com', 
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, 
-  }));
+// server.use(cors({
+//     origin: 'https://projecttracker-server.onrender.com', 
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//     credentials: true, 
+//   }));
 
-// server.use(cors())
+server.use(cors())
 
 server.use(cookieParser());
 server.use(express.json())
